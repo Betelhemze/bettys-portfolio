@@ -397,6 +397,9 @@ h1 {
   color: var(--primary);
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  position: relative;
+  z-index: 2;
+  padding-top: 0.5rem;
 }
 
 .timeline-content {
