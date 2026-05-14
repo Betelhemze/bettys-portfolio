@@ -193,7 +193,8 @@ header .header-inner {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.5;
   }
@@ -205,10 +206,10 @@ header .header-inner {
 
 .profile-photo {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   height: auto;
   border-radius: 20px;
-  box-shadow: 
+  box-shadow:
     0 20px 60px rgba(79, 70, 229, 0.2),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
   border: 2px solid var(--border);
@@ -217,13 +218,12 @@ header .header-inner {
   opacity: 0;
   z-index: 1;
   position: relative;
-  object-fit: cover;
-  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .profile-photo:hover {
   transform: translateY(-12px) scale(1.02);
-  box-shadow: 
+  box-shadow:
     0 30px 80px rgba(79, 70, 229, 0.35),
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
   filter: brightness(1.05) saturate(1.1);
