@@ -247,13 +247,12 @@ header .header-inner {
 }
 */
 
-/* VARIANT 3: Glass-morphism effect */
-/*
+
 .profile-photo {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);
 }
-*/
+
 
 /* VARIANT 4: Professional minimal - increase border */
 /*
@@ -377,7 +376,7 @@ h1 {
   position: relative;
 }
 
-/* Timeline dot */
+/* Timeline dot - HIDDEN */
 .timeline-item::before {
   content: "";
   position: absolute;
@@ -389,6 +388,7 @@ h1 {
   border: 3px solid var(--primary);
   border-radius: 50%;
   box-shadow: 0 0 0 4px var(--bg);
+  display: none;
 }
 
 .timeline-date {
