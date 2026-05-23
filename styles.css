@@ -362,6 +362,7 @@ header .header-inner {
 .hero-content {
   max-width: 46rem;
   z-index: 10;
+  padding-left: 1.5rem;
 }
 
 /* Hero Badge */
@@ -1107,6 +1108,7 @@ h1 {
 
   .hero-content {
     margin: 0 auto;
+    padding-left: 0;
   }
 
   .hero-actions {
