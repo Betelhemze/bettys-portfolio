@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
+    <!-- Google Fonts: Inter & Outfit -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
@@ -20,6 +21,13 @@
   </head>
 
   <body>
+    <!-- Ambient Background Elements -->
+    <div class="ambient-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+
     <!-- HEADER -->
     <header class="site-header">
       <div class="container header-inner">
@@ -38,7 +46,22 @@
           id="themeToggle"
           aria-label="Toggle theme"
         >
-          Dark
+          <!-- Sun Icon -->
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon -->
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
         </button>
       </div>
     </header>
@@ -49,9 +72,14 @@
       <section class="hero" id="home">
         <div class="container hero-wrapper">
           <div class="hero-content">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span>Available for Internships</span>
+            </div>
+
             <p class="eyebrow">Hello, I'm</p>
 
-            <h1>Betelhem Wondale</h1>
+            <h1>Betelhem <span class="gradient-text">Wondale</span></h1>
 
             <p class="hero-copy">
               Software Engineering student and aspiring Backend Developer with
@@ -63,19 +91,33 @@
             <div class="hero-actions">
               <a class="button primary" href="#projects">
                 View Projects
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
               </a>
 
               <a class="button secondary" href="#contact">
                 Contact Me
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
               </a>
 
               <a class="button outline" href="Betty's resume.pdf" download>
                 Download Resume
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
               </a>
             </div>
           </div>
 
           <div class="hero-image">
+            <div class="image-glow-ring"></div>
             <img src="photo.png" alt="Betelhem Wondale - Software Engineer & UI/UX Designer" class="profile-photo" />
           </div>
         </div>
@@ -95,7 +137,7 @@
               development and UI/UX design.
             </p>
 
-            <p>
+            <p style="margin-top: 1.5rem;">
               I have worked on collaborative projects involving Node.js,
               Express, REST APIs, MongoDB, and interface design using Figma. I
               enjoy combining problem-solving with creativity to build scalable
@@ -107,16 +149,19 @@
             <div>
               <strong>2+</strong>
               <span>Internship Experiences</span>
+              <p>Hands-on industry training</p>
             </div>
 
             <div>
               <strong>Backend</strong>
               <span>API & Database Development</span>
+              <p>Node.js, Express, MongoDB</p>
             </div>
 
             <div>
               <strong>UI/UX</strong>
               <span>User-Centered Design</span>
+              <p>Figma Wireframes & Prototyping</p>
             </div>
           </div>
         </div>
@@ -133,7 +178,7 @@
             <!-- EXPERIENCE 1 -->
             <div class="timeline-item">
               <div class="timeline-date">
-                June 2024 – September 2024
+                June 2024 – Sept 2024
               </div>
 
               <div class="timeline-content">
@@ -163,7 +208,7 @@
             <!-- EXPERIENCE 2 -->
             <div class="timeline-item">
               <div class="timeline-date">
-                March 2026 – April 2026
+                March 2026 – Apr 2026
               </div>
 
               <div class="timeline-content">
@@ -233,26 +278,38 @@
           <div class="skill-grid">
             <div class="skill-card">
               <h3>Backend Development</h3>
-
-              <p>
-                Node.js, Express.js, REST APIs, MongoDB, PostgreSQL, SQL, Render
-              </p>
+              <div class="skill-list">
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">Express.js</span>
+                <span class="skill-badge">REST APIs</span>
+                <span class="skill-badge">MongoDB</span>
+                <span class="skill-badge">PostgreSQL</span>
+                <span class="skill-badge">SQL</span>
+                <span class="skill-badge">Render</span>
+              </div>
             </div>
 
             <div class="skill-card">
               <h3>Frontend & UI</h3>
-
-              <p>
-                HTML, CSS, JavaScript, React, Responsive Design, Figma
-              </p>
+              <div class="skill-list">
+                <span class="skill-badge">HTML</span>
+                <span class="skill-badge">CSS</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">React</span>
+                <span class="skill-badge">Responsive Design</span>
+                <span class="skill-badge">Figma</span>
+              </div>
             </div>
 
             <div class="skill-card">
               <h3>Tools & Collaboration</h3>
-
-              <p>
-                Git, GitHub, VS Code, Team Collaboration, Problem Solving
-              </p>
+              <div class="skill-list">
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">GitHub</span>
+                <span class="skill-badge">VS Code</span>
+                <span class="skill-badge">Team Collaboration</span>
+                <span class="skill-badge">Problem Solving</span>
+              </div>
             </div>
           </div>
         </div>
@@ -266,10 +323,16 @@
           <h2>Featured Work & Projects</h2>
 
           <div class="project-grid">
-            <!-- PROJECT 1 -->
+            <!-- PROJECT 1: Secure Document Verification -->
             <article class="project-card">
               <div class="project-header">
                 <h3>Secure Document Verification</h3>
+                <div class="project-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                </div>
               </div>
 
               <p>
@@ -278,23 +341,42 @@
                 authentication for reliable document validation.
               </p>
 
-              <span class="project-tag">
-                Node.js · Express · MongoDB
-              </span>
+              <div class="project-tags">
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Express</span>
+                <span class="project-tag">MongoDB</span>
+              </div>
 
               <div class="project-links">
-                <a href="https://www.figma.com/proto/rWM1aRdETHUcwpKIC2zLOi/Secure-document-verification?node-id=257-73&t=iznqY6NDm8LRBCpl-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A2" target="_blank" rel="noopener noreferrer" class="link-btn">View Prototype</a>
+                <a href="https://www.figma.com/proto/rWM1aRdETHUcwpKIC2zLOi/Secure-document-verification?node-id=257-73&t=iznqY6NDm8LRBCpl-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=13%3A2" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5zM12 2h3.5a3.5 3.5 0 1 1-3.5 3.5V2zM12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0zM5 15.5A3.5 3.5 0 0 1 8.5 12H12v7H8.5A3.5 3.5 0 0 1 5 15.5zM12 12h3.5v7a3.5 3.5 0 1 1-3.5-3.5V12z"></path></svg>
+                  Prototype
+                </a>
+
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+                  Demo
+                </a>
 
                 <a href="https://github.com/Betelhemze/Secure-document-verification" target="_blank" rel="noopener noreferrer" class="link-btn secondary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   GitHub
                 </a>
               </div>
             </article>
 
-            <!-- PROJECT 2 -->
+            <!-- PROJECT 2: Consultancy Firm UI -->
             <article class="project-card">
               <div class="project-header">
                 <h3>Consultancy Firm UI</h3>
+                <div class="project-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
               </div>
 
               <p>
@@ -303,23 +385,37 @@
                 navigation.
               </p>
 
-              <span class="project-tag">
-                Figma · UI/UX · Prototyping
-              </span>
+              <div class="project-tags">
+                <span class="project-tag">Figma</span>
+                <span class="project-tag">UI/UX</span>
+                <span class="project-tag">Prototyping</span>
+              </div>
 
               <div class="project-links">
-                <a href="https://www.figma.com/proto/4yVOYzyopGz5teenAMsiZj/Consultancy-Firm-Website-UI?node-id=132-124&starting-point-node-id=132%3A124" target="_blank" rel="noopener noreferrer" class="link-btn">View Prototype</a>
+                <a href="https://www.figma.com/proto/4yVOYzyopGz5teenAMsiZj/Consultancy-Firm-Website-UI?node-id=132-124&starting-point-node-id=132%3A124" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5zM12 2h3.5a3.5 3.5 0 1 1-3.5 3.5V2zM12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0zM5 15.5A3.5 3.5 0 0 1 8.5 12H12v7H8.5A3.5 3.5 0 0 1 5 15.5zM12 12h3.5v7a3.5 3.5 0 1 1-3.5-3.5V12z"></path></svg>
+                  Prototype
+                </a>
 
                 <a href="https://github.com/Betelhemze/FUTURE_UX_01" target="_blank" rel="noopener noreferrer" class="link-btn secondary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   GitHub
                 </a>
               </div>
             </article>
 
-            <!-- PROJECT 3 -->
+            <!-- PROJECT 3: Fitness Center Booking -->
             <article class="project-card">
               <div class="project-header">
                 <h3>Fitness Center Appointment Booking UI</h3>
+                <div class="project-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                </div>
               </div>
 
               <p>
@@ -327,21 +423,35 @@
                 for streamlined digital participation and accessibility.
               </p>
 
-              <span class="project-tag">
-                Figma · UI/UX · Prototyping
-              </span>
+              <div class="project-tags">
+                <span class="project-tag">Figma</span>
+                <span class="project-tag">UI/UX</span>
+                <span class="project-tag">Prototyping</span>
+              </div>
 
               <div class="project-links">
-                <a href="https://www.figma.com/proto/pxScwx64pnHGLxdFwfnoYP/fitness-center-appointement-booking-UI?node-id=3-87&t=ijfZc5bEEscKhJqO-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A8" target="_blank" rel="noopener noreferrer" class="link-btn">View Prototype</a>
+                <a href="https://www.figma.com/proto/pxScwx64pnHGLxdFwfnoYP/fitness-center-appointement-booking-UI?node-id=3-87&t=ijfZc5bEEscKhJqO-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A8" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5zM12 2h3.5a3.5 3.5 0 1 1-3.5 3.5V2zM12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0zM5 15.5A3.5 3.5 0 0 1 8.5 12H12v7H8.5A3.5 3.5 0 0 1 5 15.5zM12 12h3.5v7a3.5 3.5 0 1 1-3.5-3.5V12z"></path></svg>
+                  Prototype
+                </a>
 
                 <a href="https://github.com/Betelhemze/FUTURE_UX_02" target="_blank" rel="noopener noreferrer" class="link-btn secondary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   GitHub
                 </a>
               </div>
             </article>
+
+            <!-- PROJECT 4: Her Link Mobile App -->
             <article class="project-card">
               <div class="project-header">
                 <h3>Her Link Mobile App</h3>
+                <div class="project-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;">
+                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                  </svg>
+                </div>
               </div>
 
               <p>
@@ -350,35 +460,89 @@
                 fostering business growth.
               </p>
 
-              <span class="project-tag">
-                Flutter · Node.js · Render 
-              </span>
+              <div class="project-tags">
+                <span class="project-tag">Flutter</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">Render</span>
+              </div>
 
               <div class="project-links">
-    
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" class="link-btn">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+                  Demo
+                </a>
+
                 <a href="https://github.com/Betelhemze/herlink-app" target="_blank" rel="noopener noreferrer" class="link-btn secondary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   GitHub
                 </a>
               </div>
             </article>
+
+            <!-- PROJECT 5: Smart Trash can Backend -->
             <article class="project-card">
               <div class="project-header">
-                <h3>Smart Trash can Backend</h3>
+                <h3>Smart Trash Can Backend</h3>
+                <div class="project-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;">
+                    <polyline points="3 6 5 6 21 6"></polyline>
+                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                    <line x1="10" y1="11" x2="10" y2="17"></line>
+                    <line x1="14" y1="11" x2="14" y2="17"></line>
+                  </svg>
+                </div>
               </div>
 
               <p>
-                Designed and developed a user-friendly mobile app for connecting women
-                with business collaborators and creating networking opportunities while 
-                fostering business growth.
+                Developed a robust backend IoT waste management system. Integrates
+                garbage fill-level sensors, coordinates pickup routes, and provides
+                real-time status updates and notifications.
               </p>
 
-              <span class="project-tag">
-                Node.js · MongoDB · Render · Express.js
-              </span>
+              <div class="project-tags">
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">Express.js</span>
+                <span class="project-tag">Render</span>
+              </div>
 
               <div class="project-links">
-    
-                <a href="https://github.com/Betelhemze/smart_trash_backend" target="_blank" rel="noopener noreferrer" class="link-btn secondary">
+                <a href="https://github.com/Betelhemze/smart_trash_backend" target="_blank" rel="noopener noreferrer" class="link-btn secondary" style="flex:1;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  GitHub
+                </a>
+              </div>
+            </article>
+
+            <!-- PROJECT 6: Truck Expense and Profit Tracker -->
+            <article class="project-card">
+              <div class="project-header">
+                <h3>Truck Expense & Profit Tracker</h3>
+                <div class="project-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;">
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                  </svg>
+                </div>
+              </div>
+
+              <p>
+                Designed and built a tracking system for logistics operations to monitor truck expenses,
+                including fuel, maintenance, and toll fees. Visualizes net profits, revenue, and efficiency metrics.
+              </p>
+
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">Chart.js</span>
+              </div>
+
+              <div class="project-links">
+                <a href="https://github.com/Betelhemze/truck-tracker" target="_blank" rel="noopener noreferrer" class="link-btn secondary" style="flex:1;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                   GitHub
                 </a>
               </div>
@@ -403,13 +567,11 @@
             <div class="contact-details">
               <div>
                 <strong>Email</strong>
-
                 <p>betelhemwondale@gmail.com</p>
               </div>
 
               <div>
                 <strong>Location</strong>
-
                 <p>Addis Ababa, Ethiopia</p>
               </div>
             </div>
@@ -420,6 +582,10 @@
             href="mailto:betelhemwondale@gmail.com"
           >
             Email Me
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
           </a>
         </div>
       </section>
@@ -431,11 +597,11 @@
         <p>© 2026 Betelhem Wondale.</p>
 
         <div class="social-links">
-          <a href="https://github.com/Betelhemze" target="_blank">
+          <a href="https://github.com/Betelhemze" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
 
-          <a href="https://www.linkedin.com/in/betelhem-wondale/" target="_blank">
+          <a href="https://www.linkedin.com/in/betelhem-wondale/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
         </div>
